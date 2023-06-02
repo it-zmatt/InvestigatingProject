@@ -35,7 +35,7 @@ plt.plot(years, durations)
 # Create a title
 plt.title('Netflix Movie Durations 2011-2020')
 # Show the plot
-plt.show()
+
 
 # Task 4
 
@@ -55,3 +55,16 @@ netflix_movies_col_subset = netflix_df_movies_only[['title', 'country', 'genre',
 
 # Print the first five rows of the new DataFrame
 print(netflix_movies_col_subset[0:5])
+
+# Task 6
+
+# Create a figure and increase the figure size
+fig = plt.figure(figsize=(12,8))
+
+# Create a scatter plot of duration versus year
+plt.scatter(netflix_movies_col_subset[['release_year']], netflix_movies_col_subset[['duration']])
+
+# Create a title
+plt.title('Movie Duration by Year of Release')
+# Show the plot
+plt.show()
