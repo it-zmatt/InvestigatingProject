@@ -67,4 +67,11 @@ plt.scatter(netflix_movies_col_subset[['release_year']], netflix_movies_col_subs
 # Create a title
 plt.title('Movie Duration by Year of Release')
 # Show the plot
-plt.show()
+
+# Task 7
+
+# Filter for durations shorter than 60 minutes
+short_movies = netflix_movies_col_subset[netflix_movies_col_subset['duration'] <= 60]
+
+# Print the first 20 rows of short_movies
+print(short_movies[0:20])
