@@ -12,3 +12,9 @@ movie_dict = {
 
 # Print the dictionary
 print(movie_dict)
+
+# Import pandas under its usual alias
+import pandas as pd
+# Create a DataFrame from the dictionary
+durations_df = pd.DataFrame(movie_dict)
+print(durations_df)
