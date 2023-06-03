@@ -111,4 +111,9 @@ plt.xlabel('Release year')
 plt.ylabel('Duration (min)')
 
 # Show the plot
-plt.show()
+plt.show
+
+# Task 10 
+
+# Are we certain that movies are getting shorter?
+are_movies_getting_shorter = "Depends on the genre of movie"
